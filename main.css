@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;}
+
+body{
+ font-family: 'Open Sans', sans-serif;
+ background: #fff;
+ color: #333;
+ line-height: 1.5;
+}
+
+
+ul{
+list-style:none;
+}
+
+a{
+color: #333;
+text-decoration: none;
+}
+
+h1,h2{
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1 span, h2 span{
+color: #f2e13f;
+}
+
+p{
+margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* navbar */
+.navbar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: .8;
+  width:100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+}
+
+
+.navbar a{
+color: #fff;
+padding: 10px 15px;
+margin: 0 5px;
+
+}
+
+.navbar a:hover{
+ border-bottom: #f2e13f 3px solid;
+   padding-bottom: 15px;
+   color:#fae200 ; 
+}
+
+.navbar ul{
+display:flex;
+}
+
+ .logo{
+font-weight: 400;
+}
+
+
+
+/* Header */
+
+.hero{
+height:100vh;
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.3)),url('background.jpg') no-repeat center center/cover;
+  position: relative;
+  color:#fff;
+}
+
+.hero .content{
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+height: 100%;   
+padding: 0 20px;
+}
+
+.hero .content h1{
+  font-size: 45px;
+}
+
+
+.hero .content p{
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+
+.hero.blog{
+  background: url('pic2.jpg') no-repeat center center/cover;
+  height: 30vh;
+  
+  
+}
+
+
+.glow {
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                 0 0 50px #f2e13f, 0 0 60px #f2e13f, 0 0 70px #f2e13f;
+  }
+  to {
+    text-shadow: 0 0 20px #f2e13f, 0 0 30px #f2e13f, 0 0 40px #f2e13f, 0 0 50px #ff4da6, 
+                 0 0 60px #f2e13f, 0 0 70px #f2e13f, 0 0 80px #f2e13f;
+  }
+}
+
+/* ICONS */
+.icons {
+  padding: 30px;
+}
+
+.icons h3{
+  font-weigth: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  border: 3px solid #f2e13f;
+  color: #f2e13f;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.cases img:hover{
+  opacity: 0.7;
+}
+
+/* team */
+
+.team img{
+  border-radius: 50%;
+  width:20vw;
+  margin:0 2vw;
+}
+
+
+/* contact */
+
+.callback-form{
+  width: 100%;
+  padding: 20px 0;
+  }
+  
+  
+  
+  .callback-form label{
+    display:block;
+    margin-bottom: 5px;
+  }
+  
+  .callback-form .form-control{
+    margin-bottom: 15px;
+  }
+  
+  .callback-form input:not(:nth-child(1)) {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #f5f5f5 1px solid;
+  }
+  
+  .callback-form .btn{
+    padding: 12px 0;
+    margin-top:20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  
+  .callback-form input[type="text"],
+  .callback-form input[type="email"]{
+  padding-left: 20px;
+  }
+  
+  .callback-form input[type="checkbox"]{
+   transform: scale(1.5);
+   margin-left:10px;
+  }
+  
+  .callback-form label:nth-child(2)   {
+  display:inline;
+  margin-left: 1rem;
+  font-size: 20px;
+  }
+  
+   .callback-form input:focus{
+    outline-color: #f2e13f;
+   }
+   
+    /* POSt*/
+    
+    .post{
+      padding: 50px 30px;
+    }
+    
+    .post h2{
+      font-size:40px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: #ccc solid 1px;
+    }
+    
+    .post .meta {
+      margin-bottom: 30px;
+    }
+    
+    .post img {
+      width:60%;
+      border-radius: 2px;
+      margin: 0 auto 30px;
+      display:block;
+      
+    }
+   
+   
+   
+   
+   
+   /* FOOTEr*/
+   .footer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    height: 200px;
+   }
+   
+   .footer a {
+    color: #fff;
+    margin: 10px;
+   }
+   
+   .footer a:hover{
+   color:  #f2e13f;
+   }
+   
+   .footer .social > *{
+   margin:20px;
+   }
+   
+   /* MOBILE*/
+   
+   @media(max-width: 768px){
+    .navbar{
+      flex-direction: column;
+      height: 120px;
+      padding: 20px;
+    }
+    
+    .navbar a{
+      padding: 10px 10px;
+      margin: 0 3px;
+    }
+    
+    .flex-items{
+      flex-direction: column;
+    }
+    
+    .flex-columns .column,
+    .flex-grid .column{
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    .team img {
+      width:80%;
+    }
+    
+   }
