@@ -16,13 +16,22 @@
   padding: 10px 30px;
   color: #333;
   background-color: #f2e13f;
-  border:none;
+  border:2px solid #fff;
   border-radius: 5px;
+
+  box-shadow: inset 0 0 0 0 #fff;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
 }
 
 .btn:hover{
-  opacity: 0.9;
+
+  box-shadow: inset 800px 0 0 0 #fff;
+
 }
+
+
 
 .btn-primary,
 .bg-primary{
@@ -36,28 +45,17 @@
   background-color: #41980A;
 }
 
-.btn-dark,.bg-dark{
+.bg-dark{
   color: #fff;
   background-color: #333;
 }
 
-.btn-light,.bg-light{
+.bg-light{
   color: #333;
   background-color: #faee7a;
 }
 
 
-.btn-outline{
-  background: transparent;
-  border: 3px solid #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-outline:hover{
-    background: #fff;
-    color:#000;
-  border: 3px solid #f2e13f;
-} 
 .new{
   background: #fff;
   border: 3px solid #fff;
@@ -109,7 +107,7 @@
 
 .flex-columns .column .column-1,
 .flex-columns .column .column-2{
-  height:100%; 
+  height:100%;
 }
 
 .flex-columns img{
